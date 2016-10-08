@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-10-04 16:47:25
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-06 15:13:08
+* @Last Modified time: 2016-10-08 22:03:16
 */
 
 $(function(){
@@ -74,7 +74,7 @@ $(function(){
 			}else{
 				
 				if(!reg.test(str)){
-					$('.phone-number strong').show().html('!手机格式有误，请重新输入');
+					$('.phone-number strong').show().html('手机格式有误，请重新输入!!!');
 				}else{
 					$('.phone-number strong').hide();
 					$('.phone-number').css({
@@ -92,17 +92,19 @@ $(function(){
 			var btn = $('.verification-code b');
 			var that = this;
 			var str = $('.verification-code input').val(); 
+
 			if(str == ""){
 				$('.verification-code strong').show();
 			}else{
-				if(str == btn.html()){
+				if(btn.html().search(/str/i)){
+					
 					$('.verification-code strong').hide();
 					$('.verification-code').css({
 						border: '1px solid #999',
 						height: 46
 					});
 				}else{
-					$('.verification-code strong').show().html('验证码输入错误，请重新输入');
+					$('.verification-code strong').show().html('验证码输入错误，请重新输入!!!');
 				}
 			};
 			
@@ -142,7 +144,7 @@ $(function(){
 				$('.message strong').show();
 			}else{
 				if(!reg.test(str)){
-					$('.message strong').show().html('验证码错误，请重新输入');
+					$('.message strong').show().html('验证码错误，请重新输入!!!');
 				}else{
 					$('.message strong').hide();
 					$('.message').css({

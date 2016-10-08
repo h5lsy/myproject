@@ -2,17 +2,8 @@
 * @Author: Administrator
 * @Date:   2016-09-27 20:11:57
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-06 15:14:26
+* @Last Modified time: 2016-10-08 21:09:47
 */
-/*
-	logo 搜索框 Ajax效果
- */
-
-
-/*
-	nav 分类效果
- */
-
 
 /*
 	banner图淡入淡出轮播
@@ -106,27 +97,26 @@ $(function(){
 
 
 /*
-service 鼠标移入颜色变换
+	service 鼠标移入颜色变换
  */
 $(function(){
 	
 	$('.service a').hover(function(){
-		$(this).addClass('active');
-		// $('.service span').css({
-			
-		// 	color: '#e10482'
-		// });
-		// $('.service p').css({
-		// 	color: '#e10482'
-		// });
+		$(this).find('span').css({
+			color: '#e10482'
+		});
+		$(this).find('p').css({
+			color: '#e10482'
+		});
+		
 	},function(){
-		$('.service span').css({
+		$(this).find('span').css({
 			
 			color: '#404040'
 		});
-		// $('.service p').css({
-		// 	color: '#404040'
-		// });
+		$(this).find('p').css({
+			color: '#404040'
+		});
 	});
 });
 
@@ -148,7 +138,7 @@ $(function(){
 
 
 /*
- hot-collection鼠标滑过图片，图片向上运动
+ 	hot-collection鼠标滑过图片，图片向上运动
  */
 $(function(){
 	$('.hot-list-left').hover(function(){
@@ -174,7 +164,7 @@ $(function(){
 	hot brand 鼠标滑过，图片透明度改变
  */
 $(function(){
-	$('.hot-brand-list img').hover(function(){
+	$('.hot-brand-list img.opacity').hover(function(){
 		$(this).css({
 			opacity: 0.8
 		});
@@ -209,3 +199,29 @@ $(function(){
 });
 
 
+/*
+	global-sale-right 鼠标滑过 出现border 图片上出现文字
+		selection-img 鼠标滑过 出现阴影
+ */
+$(function(){
+	$('.hot-brand-item').hover(function(){
+		$(this).css({
+			border: '1px solid #ccc'
+		});
+		$(this).find('p').show();
+	},function(){
+		$(this).css({
+			border: 0
+		});
+		$(this).find('p').hide();
+	});
+	$('.selection-img').hover(function(){
+		$(this).css({
+			'box-shadow': '0 0 10px #ccc'
+		});
+	},function(){
+		$(this).css({
+			'box-shadow': '0 0 0 #fff'
+		});
+	});
+});

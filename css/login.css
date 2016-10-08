@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-10-06 15:00:27
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-06 16:34:12
+* @Last Modified time: 2016-10-08 11:15:20
 */
 
 
@@ -232,7 +232,7 @@ a {
     padding-left: 10px;
     padding-top: 15px;
 }
-.fixed-list .first-item .contact {
+.fixed-list .contact {
     width: 114px;
     height: 123px;
     border: 1px solid #ccc;
@@ -240,13 +240,13 @@ a {
     padding-left: 10px;
     position: absolute;
     right: 60px;
-    top: 0;
+    top: 120px;
     background-color: #fff;
     color: #000;
     font-size: 12px;
     display: none;
 }
-.fixed-list .first-item .contact .contact-first {
+.fixed-list .contact .contact-first {
   width: 80px;
   height: 24px;
   line-height: 24px;
@@ -255,7 +255,7 @@ a {
   text-align: center;
   margin: 20px 0;
 }
-.fixed-list .first-item .contact .arrow{
+.fixed-list .contact .arrow{
   position: absolute;
   right: -16px;
   bottom:10px;
@@ -299,7 +299,7 @@ a {
   top: 390px;
   right: 0;
 }
-.fixed-list a.common .my-collect-box {
+.fixed-list .my-collect-box {
   opacity: 0;
   filter: alpha(opacity=0);
   width: 80px;
@@ -310,12 +310,35 @@ a {
   font-size: 14px;
   position: absolute;
   right: 60px;
-  top: 0;
+  top: 390px;
   border: 1px solid #ccc;
   border-right: 0;
   background-color: #fff;
 }
-.fixed-list a.common .my-collect-box .arrow{
+.fixed-list .my-collect-box .arrow{
+  position: absolute;
+  right: -10px;
+  bottom:10px;
+  border:5px solid transparent;
+  border-left-color:#fff; 
+}
+.fixed-list .my-coupon-box {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #e10482;
+  font-size: 14px;
+  position: absolute;
+  right: 60px;
+  top: 435px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  background-color: #fff;
+}
+.fixed-list .my-coupon-box .arrow{
   position: absolute;
   right: -10px;
   bottom:10px;
@@ -328,6 +351,7 @@ a {
 .fixed-list a.my-coupon {
   top: 435px;
 }
+
 .fixed-list a.QR-code {
   color: #fff;
   display: block;
@@ -339,12 +363,12 @@ a {
   bottom: 50px;
   right: 0;
 }
-.fixed-list a.QR-code .wenxin {
+.fixed-list .wenxin {
   opacity: 0;
   filter: alpha(opacity=0);
   position: absolute;
   right: 60px;
-  top: -110px;
+  top: 480px;
   width: 110px;
   height: 130px;
   border: 1px solid #ccc;
@@ -353,13 +377,13 @@ a {
   font-size: 14px;
   background-color: #fff;
 }
-.fixed-list a.QR-code .wenxin p {
+.fixed-list .wenxin p {
   height: 20px;
   line-height: 20px;
   text-align: center;
   margin:0;
 }
-.fixed-list a.QR-code .wenxin .arrow{
+.fixed-list .wenxin .arrow{
   position: absolute;
   right: -10px;
   bottom:10px;

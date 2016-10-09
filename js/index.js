@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-09-27 20:11:57
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-08 21:09:47
+* @Last Modified time: 2016-10-09 12:02:01
 */
 
 /*
@@ -181,20 +181,20 @@ $(function(){
  */
 $(function(){
 	$('.global-show-img').hover(function(){
-		$(this).find('.global-show-first').animate({
+		$(this).find('.global-show-first').stop(true).animate({
 			width: 444,
 			height: 286,
 			marginTop: -13,
 			marginLeft: -13
 
-		})
+		},200)
 	},function(){
-		$(this).find('.global-show-first').animate({
+		$(this).find('.global-show-first').stop(true).animate({
 			width: 418,
 			height: 260,
 			marginTop: 0,
 			marginLeft: 0
-		})
+		},200)
 	});
 });
 

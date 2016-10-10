@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-10-04 16:47:25
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-09 21:27:16
+* @Last Modified time: 2016-10-10 11:24:03
 */
 
 
@@ -329,8 +329,15 @@ $(function(){
 				}else{
 					that.container.show();
 				}
-				//页面跳转到登录页面
-				//window.location.href = 'login.html';
+
+				//设置cookie
+				var userinfo = {
+					phoneNumber: $('.phone-number input').val(),
+					passWord: $('.import-password input').val()
+				}; 
+				console.log(userinfo);
+				$.cookie('userinfo',JSON.stringify( userinfo ),{expires: 365,path: '/'});
+				
 			});
 			$('.box span,.box button').on('click',function(){
 				that.container.hide();
@@ -343,11 +350,8 @@ $(function(){
 			// 	that.container.hide();
 			// });
 			
-			var userinfo = {
-					phoneNumber: that.phoneNumInput.val(),
-					passWord: that.importPassword.val()
-				}; 
-			$.cookie('userinfo',JSON.stringify( userinfo ),{expires: 365,path: '/'});
+			
+
 		},
 	};
 	signup.init();

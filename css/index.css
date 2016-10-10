@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-09-27 20:12:28
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-08 21:18:11
+* @Last Modified time: 2016-10-10 19:27:04
 */
 @charset 'utf-8';
 body,html,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
@@ -625,6 +625,7 @@ a{
 	text-align: center;
 	color: #fff;
 	margin-left: 100px;
+	cursor: pointer;
 }
 .global-sale-left .global-sale-show .global-show-txt button:hover{
 	background-color: #e10482;
@@ -692,11 +693,11 @@ a{
 }
 .global-sale .global-sale-right .second{
 	left:123px;
-	top:-120px;
+	top:-119px;
 }
 .global-sale .global-sale-right .third{
 	left:245px;
-	top:-240px;
+	top:-239px;
 }
 .global-sale .global-sale-right .fourth{
 	left:0px;

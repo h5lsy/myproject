@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-09-27 20:11:57
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-09 12:02:01
+* @Last Modified time: 2016-10-10 09:45:57
 */
 
 /*
@@ -206,12 +206,12 @@ $(function(){
 $(function(){
 	$('.hot-brand-item').hover(function(){
 		$(this).css({
-			border: '1px solid #ccc'
+			'box-shadow': '0 0 5px #333'
 		});
 		$(this).find('p').show();
 	},function(){
 		$(this).css({
-			border: 0
+			'box-shadow': '0 0 0 #fff'
 		});
 		$(this).find('p').hide();
 	});

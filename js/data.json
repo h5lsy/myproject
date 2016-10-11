@@ -1,0 +1,17 @@
+{
+	"10001": {
+		"goods-id": 10001,
+		"goods-name": "L'OCCITANE欧舒丹 乳木果丰凝润护手霜 30ml*2支",
+		"goods-price": 75.00,
+		"goods-img": "images/goods-img.jpg"
+	},
+	"10002": {
+		"goods-id": 10002,
+		"goods-name": "金丝玉帛 气垫BB霜 21#象牙色 30g",
+		"goods-price": 89.90,
+		"goods-img": "img/10001-small.jpg"
+	}
+}
+
+
+

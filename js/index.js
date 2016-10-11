@@ -95,7 +95,6 @@ $(function(){
 	banner.init();
 });
 
-
 /*
 	service 鼠标移入颜色变换
  */
@@ -120,7 +119,6 @@ $(function(){
 	});
 });
 
-
 /*
 	show鼠标移入图片，图片出现向上移动的效果
  */
@@ -135,7 +133,6 @@ $(function(){
 		});
 	});
 });
-
 
 /*
  	hot-collection鼠标滑过图片，图片向上运动
@@ -175,7 +172,6 @@ $(function(){
 	});
 });
 
-
 /*
 	global-sale-left 鼠标滑过 图片变大
  */
@@ -197,7 +193,6 @@ $(function(){
 		},200)
 	});
 });
-
 
 /*
 	global-sale-right 鼠标滑过 出现border 图片上出现文字

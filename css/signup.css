@@ -3,7 +3,7 @@
 * @Author: Administrator
 * @Date:   2016-10-04 14:32:34
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-09 21:30:00
+* @Last Modified time: 2016-10-11 19:52:13
 */
 body, html, div, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
   margin: 0;
@@ -15,16 +15,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
 img {
   border: 0;
   display: block;
 }
-
 ul, ol, li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -233,8 +230,6 @@ a {
   color: #333;
   outline: none;
 }
-
-
 .w-free-signup .free-signup .next .password-box .check-password{
   width: 336px;
   height: 46px;
@@ -264,7 +259,6 @@ a {
 .w-free-signup .free-signup .next p{
   width: 100%;
   height: 20px;
-
 }
 .w-free-signup .free-signup .next p input{
   float: left;
@@ -324,7 +318,6 @@ a {
   margin-left: 230px;
   margin-top: 10px;
   color: #ccc;
-
 }
 .container .box span:hover{
   color: #e10074;
@@ -356,19 +349,6 @@ a {
   background-color: #e10047;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .w-free-signup .free-signup .signup-box .signup-box-item {
   width: 336px;

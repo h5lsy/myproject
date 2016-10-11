@@ -6,17 +6,14 @@
 */
 
 
-
-
-
 /*
 	税费说明  展开与隐藏
  */
 $(function(){
 	$('.price strong').hover(function(){
-		$(this).find('.taxes').slideDown(500);
+		$(this).find('.taxes').stop(true).slideDown(500);
 	},function(){
-		$(this).find('.taxes').slideUp(500);
+		$(this).find('.taxes').stop(true).slideUp(500);
 	});
 });
 
@@ -32,11 +29,10 @@ $(function(){
 });
 
 /*
-	商品数量的加减
+	商品详情
  */
-
 $(function(){
-	var amount = {
+	var goodsDetail = {
 		init: function(){
 			this.numReduce = $('.reduce');
 			this.numInput = $('.amount input');
@@ -45,6 +41,7 @@ $(function(){
 			this.amountAdd();
 			this.inputChange();
 			this.amountReduce();
+			this.addCart();
 		},
 
 		//商品数量++
@@ -104,9 +101,20 @@ $(function(){
 			});
 		},
 		addCart: function(){
-			
+			var that = this;
+			$('.add').click(function(){
+				$('.mengceng').show();
+				$('.box span,.cancel').on('click',function(){
+					$('.mengceng').hide();					
+				});
+				$('.see').click(function(){
+					$(this).parent().parent().hide();
+					//跳转到购物车页面
+					window.location.href = 'cart.html';
+				});
+			});
 		},
 	};
-	amount.init();
+	goodsDetail.init();
 });
 

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-10-04 16:47:25
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-10 11:24:03
+* @Last Modified time: 2016-10-11 15:24:57
 */
 
 
@@ -29,6 +29,11 @@ $(function(){
 			this.i = 0;
 			this.j = 0;
 
+			this.validate = {
+				phonenmuber: true,
+				password: true
+			};
+
 			this.borderColorChange();
 			this.randomFourCode();
 			// this.usableBtn();
@@ -52,7 +57,7 @@ $(function(){
 					border: '2px solid #e10074',
 					height: 44
 				});
-				that.phoneNumber();
+				that.phoneNumber( $(this).val() );
 				
 			});
 			$('.verification-code input').blur(function(){
@@ -73,8 +78,8 @@ $(function(){
 			});
 		},
 
-		//判断手机号是否输入正确，
-		phoneNumber: function(){
+		//判断手机号格式是否输入正确，及是否已经注册
+		phoneNumber: function(phonenumber){
 			var that = this;			
 			var str = $('.phone-number input').val();			
 			var reg = /^1\d{10}$/;
@@ -84,16 +89,35 @@ $(function(){
 				if(!reg.test(str)){
 					$('.phone-number strong').show().html('手机格式有误，请重新输入!!!');
 				}else{
-					$('.phone-number strong').hide();
-					$('.phone-number').css({
-						border: '1px solid #999',
-						height: 46
-					});
-					that.i++;
-					console.log(that.i)
-				}
+			//读取已经注册的用户
+				$.getJSON('js/pn-data.json?key='+Math.random(),function(result){
+					
+					that.validate.phonenumber = true;
+					for(var key in result){											
+						if(phonenumber == parseInt(result[key].phonenumber)){							
+							that.validate.phonenumber = false;
+							break;
+						}
+					}
+					
+					if(!that.validate.phonenumber){
+						console.log(that.validate.phonenumber)
+						$('.phone-number strong').show().html('你已注册，请直接登陆');
+					}else{
+						console.log(that.validate.phonenumber)
+						$('.phone-number strong').hide();
+						$('.phone-number').css({
+							border: '1px solid #999',
+							height: 46
+						});
+						that.i++;
+						console.log(that.i)
+					}
+					
+				});
 			};								
-		},
+		};
+	},
 
 		//判断验证码是否输入正确
 		verificationCode: function(){
@@ -349,9 +373,7 @@ $(function(){
 			// that.boxButton.click(function(){
 			// 	that.container.hide();
 			// });
-			
-			
-
+						
 		},
 	};
 	signup.init();

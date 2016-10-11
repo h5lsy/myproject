@@ -14,7 +14,6 @@ $(function(){
 	var username = $('.username input').val();		
 	var password = $('.password input').val();
 
-
 	loginBtn.click(function(){		
 		var username = $('.username input').val();		
 		var password = $('.password input').val();
@@ -23,8 +22,7 @@ $(function(){
 			console.log(loginUserinfo);
 		loginUserinfo = JSON.parse( loginUserinfo );//将一个json对象字符串转为json对象
 			console.log(loginUserinfo);
-		$('.username input').val(loginUserinfo.phoneNumber);
-			
+		$('.username input').val(loginUserinfo.phoneNumber);			
 		$('.password input').val(loginUserinfo.passWord);
 
 		setTimeout(function(){

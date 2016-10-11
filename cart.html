@@ -4,21 +4,22 @@
         <meta charset="utf-8">
         <title>购物车</title>
         <link rel="stylesheet" type="text/css" href="css/cart.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
     </head>
     <body>
     	<!--top-->
 	    	<div class="w-top">
 	    		<div class="top con">
-	    			欢迎你，
-	    			<a href="#">丶lsy</a>
-	    			<a class="a-phone" href="#">[退出]</a>
-	    			<a href="#">我的订单</a>
-	    			<span>|</span>
-	    			<a href="#">我的优惠券</a>
-	    			<span>|</span>
-	    			<a href="#">我的收藏</a>
-	    			<span>|</span>
-	    			<a href="#">帮助中心</a>
+	    			<a href="#">登录</a>
+                    <a href="#">免费注册</a>
+                    <a class="a-phone" href="#">手机版</a>
+                    <a href="#">我的订单</a>
+                    <span>|</span>
+                    <a href="#">我的优惠券</a>
+                    <span>|</span>
+                    <a href="#">我的收藏</a>
+                    <span>|</span>
+                    <a href="#">帮助中心</a>
 	    		</div>
 	    	</div>
 	    <!--logo-->
@@ -30,7 +31,7 @@
 	    				<input type="text" placeholder="搜索商品">
 	    				<div class="search">搜索</div>
 	    				<ul>
-	    					
+
 	    				</ul>
 	    			</div>
 	    			<div class="logo-keywords">
@@ -55,7 +56,7 @@
                     <thead>
                         <tr>
                             <th width="5%">
-                                <input type="checkbox" />
+                                <input type="checkbox" name="selectbtn"/>
                                 <label>全选</label>
                             </th>                   
                             <th width="43%">商品</th>
@@ -70,18 +71,23 @@
                 <div class="container">
                     
                 </div>
+                <div class="mengceng">
+                    <div class="ask-box">
+                        <span>X</span>
+                        <p>确认将商品移出购物袋？</p>
+                        <button class="confirm btn">确认</button>
+                        <button class="cancel btn">取消</button>
+                    </div>
+                </div>
             <!--操作区-->
                 <div class="cart-option">
                     <a href="index.html">< 继续购物</a>
                     <button>去结算</button>
-                    <p>已选<span>0</span>件商品，合计(不含运费及税收)<b><span class="price">￥</span>0.00</b></p>
+                    <p>已选<span class="num">0</span>件商品，合计(不含运费及税收)<b><span class="price">￥</span><i>0.00</i></b></p>
 
-                    
                 </div>
                 <img src="images/cart-img-2.png" alt="" />
-            </div>
-
-       
+            </div>     
     <!--foot-nav-->
         <div class="w-foot-nav">
             <div class="foot-nav con">
@@ -115,22 +121,11 @@
                     </a>
                     <a href="#">
                         <img src="images/bottom-5.png" alt="" />
-                    </a>
-                    
+                    </a>                    
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-	    <!--fixed-list-->
+	<!--fixed-list-->
         <div class="fixed-list">
             <div class="first-item">
                 <i class="iconfont">&#xe713;</i>
@@ -174,19 +169,9 @@
             </a>            
         </div>
 
-
         <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/jquery.cookie.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/cart.js"></script>
-
-
-
-
-
-
-
-
-
     </body>
 </html>

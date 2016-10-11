@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-10-06 15:00:27
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-10-10 10:08:20
+* @Last Modified time: 2016-10-11 19:50:48
 */
 
 
@@ -226,13 +226,7 @@ a {
 .w-login .login .login-box button:hover{
   background-color: #e10047;
   cursor: pointer;
-  
 }
-
-
-
-
-
 
 /*foot-nav*/
 .w-foot-nav {
@@ -492,7 +486,6 @@ a {
   border:5px solid transparent;
   border-left-color:#fff; 
 }
-
 .fixed-list a.QR-code:hover {
   background-color: #e10482;
 }

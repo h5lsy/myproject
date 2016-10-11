@@ -20,8 +20,7 @@ $(function(){
 		$('.contact').stop(true).animate({
 			right: 60,
 			opacity: 0
-		});
-		
+		});		
 
 	});
 });
@@ -32,15 +31,13 @@ $(function(){
 		$('.my-collect-box').show().stop(true).animate({
 			right: 35,
 			opacity: 1,
-
 		});
 
 	},function(){
 		$('.my-collect-box').stop(true).animate({
 			right: 60,
 			opacity: 0
-		});
-		
+		});		
 
 	});
 });
@@ -51,15 +48,13 @@ $(function(){
 		$('.my-coupon-box').show().stop(true).animate({
 			right: 35,
 			opacity: 1,
-
 		});
 
 	},function(){
 		$('.my-coupon-box').stop(true).animate({
 			right: 60,
 			opacity: 0
-		});
-		
+		});		
 
 	});
 });
@@ -70,7 +65,6 @@ $(function(){
 		$('.wenxin').show().stop(true).animate({
 			right: 35,
 			opacity: 1,
-
 		});
 
 	},function(){
@@ -79,10 +73,8 @@ $(function(){
 			opacity: 0
 		});
 		
-
 	});
 });
-
 
 /*
 	搜索框ajax效果
@@ -127,9 +119,7 @@ $(function(){
 				// 	that.searchContent.html(content);
 				// }
 
-
 			});
-
 			
 		},
 		//点击搜索框出现下拉列表
